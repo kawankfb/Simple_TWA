@@ -90,10 +90,10 @@
 
         // Show main button
         Telegram.WebApp.MainButton.setParams({
-            text: 'Main Button'
+            text: 'Click me'
         });
         Telegram.WebApp.MainButton.onClick(function () {
-            Telegram.WebApp.showAlert('Main Button was clicked')
+            Telegram.WebApp.showAlert('Kawan is Awesome')
         });	
         Telegram.WebApp.MainButton.show();
 
@@ -101,14 +101,14 @@
         function showPopup() {
             Telegram.WebApp.showPopup({
                 title: 'Title',
-                message: 'Some message',
+                message: 'Check out Kawan\'s git-hub profile',
                 buttons: [
-                    {id: 'link', type: 'default', text: 'Open ton.org'},
+                    {id: 'link', type: 'default', text: 'Open Kawan\'s github'},
                     {type: 'cancel'},
                 ]
             }, function(btn) {
                 if (btn === 'link') {
-                    Telegram.WebApp.openLink('https://ton.org/');
+                    Telegram.WebApp.openLink('https://kawankfb.github.io/Simple_TWA/');
                 }
             });
         };
